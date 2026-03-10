@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 1</title>
+</head>
+<body>
+    <script>
+        //exercício 1
+        var nome_do_carro = "Fusca";
+
+        alert(nome_do_carro);
+
+        //exercicio 2
+        var nome = prompt("digite seu nome:")
+
+        alert("Olá, "+nome)
+
+        //exercício 3
+        var nome = prompt("digite seu nome:")
+        var idade = prompt("digite sua idade:")
+        alert("Olá, "+nome+", sua idade é "+idade)
+
+        //exercício 4
+        var forma = prompt("Escolha: Retângulo, Quadrado, Losango, Trapézio, Paralelogramo, Triângulo, Círculo")
+        switch(forma){
+            case "Retângulo":
+                var valor1 = Number(prompt("base: "))
+                var valor2 = Number(prompt("altura: "))
+                alert(valor1 * valor2)
+                break
+            case "Quadrado":
+                var valor1 = Number(prompt("lados: "))
+                alert(valor1**2)
+                break
+            case "Losango":
+                var valor1 = Number(prompt("diagonal maior: "))
+                var valor2 = Number(prompt("diagonal menor: "))
+                alert((valor1 * valor2)/2)
+                break
+            case "Trapézio":
+                var valor1 = Number(prompt("base maior: "))
+                var valor2 = Number(prompt("base menor: "))
+                var valor3 = Number(prompt("altura: "))
+                alert(((valor1 + valor2) * valor3)/2)
+                break
+            case "Paralelogramo":
+                var valor1 = Number(prompt("base: "))
+                var valor2 = Number(prompt("altura: "))
+                alert(valor1 * valor2)
+                break
+            case "Triângulo":
+                var valor1 = Number(prompt("base: "))
+                var valor2 = Number(prompt("altura: "))
+                alert(valor1 * valor2)
+                break
+            case "Círculo":
+                var valor1 = Number(prompt("raio: "))
+                alert(3.14 * (valor1**2))
+                break
+            default:
+                alert("Não é uma das opções.")
+        }
+    </script>
+</body>
+</html>
