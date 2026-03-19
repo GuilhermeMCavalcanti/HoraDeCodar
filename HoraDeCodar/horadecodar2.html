@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        //exercício 1
+        //---- exercício 1 ----
         var valor1 = Number(prompt("Informe um número: "))
         var valor2 = Number(prompt("Informe outro número: "))
 
@@ -21,8 +21,98 @@
             alert("inválido")
         }
 
-        //exercício 2
+        //---- exercício 2 ----
+        var valor1 = (prompt("Informe um número: "))
+
+        if(valor1 > 0){
+            alert(valor1 + " é positivo.")
+        } else if(valor1 < 0){
+            alert(valor1 + " é negativo.")
+        }else{
+            alert(valor1 + " é igual a zero.")
+        }
+
+        //---- exercício 3 ----
+        var valores = [1, 362, 84]
+
+        alert("valores: " + valores)
+        valores.sort((a, b) => a - b);
+        alert(valores[2])
+
+        //---- exercício 4 ----
+        valores = []
+        for( let i = 0; i < 3; i++){
+            valor = Number(prompt("insira um número: "))
+            valores.push(valor)
+        }
+
+        alert("valores: " + valores)
+        alert(valores[1] + valores[2])
+
+        //---- exercicio 5 ----
+        valores = []
+        for( let i = 0; i < 6; i++){
+            valor = Number(prompt("insira um número: "))
+            valores.push(valor)
+        }
+
+        alert("valores: " + valores)
+        var soma = valores.reduce((acc, num) => {
+            return acc + num
+        }, 0)
+        alert(soma / valores.length)
+
+        //---- exercicio 6 ----
+        valores = []
+        for( let i = 0; i < 4; i++){
+            valor = Number(prompt("insira um número: "))
+            valores.push(valor)
+        }
         
+        alert("primeiro valor: " + valores[0])
+        alert("ultimo valor: " + valores[3])
+
+        valores.sort((a, b) => a - b);
+        alert("maior valor: " + valores[3])
+
+        //---- exercicio 7 ----
+        valores_menor72 = []
+        valores_maior72 = []
+        for( let i = 0; i < 4; i++){
+            valor = Number(prompt("insira um número: "))
+            if(valor < 72){
+                valores_menor72.push(valor)
+            }else{
+                valores_maior72.push(valor)
+            }
+        }
+        var soma = valores_menor72.reduce((acc, num) => {
+            return acc + num
+        }, 0)
+        alert("soma dos números menores que 72: " + soma)
+        alert("números maiores que 72: " + valores_maior72)
+
+        //---- exercicio 8 ----
+        valores = []
+        for( let i = 0; i < 4; i++){
+            nota = Number(prompt("insira um número: "))
+            if(nota >= 0 && nota <= 10){
+                valores.push(nota)
+            }else{
+                alert("nota invalida")
+            }
+        }
+        var soma = valores.reduce((acc, num) => {
+            return acc + num
+        }, 0)
+        media = soma / valores.length
+        if(media >5){
+            alert("Você passou no teste!!")
+        }else{
+            alert("Tente novamente")
+        }
+
+
     </script>
 </body>
 </html>
