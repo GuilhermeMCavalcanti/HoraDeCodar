@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 3</title>
+</head>
+<body>
+    <script>
+        //---- exercicio 1 ----
+        for(var i = 30; i > 0; i--){
+            alert(i)
+        }
+        alert("EXPLOSÃO")
+
+        //---- exercicio 2 ----
+        var valor1 = Number(prompt("Informe um número:"))
+        while(true){
+            var valor2 = Number(prompt("Informe outro número:"))
+            if(valor2 > 0){
+                break
+            }
+        }
+        alert(valor1 / valor2)
+
+        //---- exercício 3 -----
+        let lista = []
+        for(var i = 10; i > 0; i--){
+            lista.push(i)
+        }
+        alert(lista)
+
+        //---- exercício 4 ----
+        let valores = []
+        for(var i = 15; i < 101; i++){
+            valores.push(i)
+        }
+
+        var soma = valores.reduce((acc, num) => {
+            return acc + num
+        }, 0)
+        media = soma / valores.length
+
+        alert(media)
+
+        //---- exercício 5 ----
+        var valor1 = Number(prompt("Insira um número:"))
+        var valor2 = Number(prompt("Insira outro número:"))
+        valores = []
+
+        for(var i = valor1; i < valor2+1; i++){
+            valores.push(i)
+        }
+        alert(valores)
+        var soma = valores.reduce((acc, num) => {
+            return acc + num
+        }, 0)
+        media = soma / valores.length
+
+        alert(media)
+
+        //---- exercício 6 ----
+        cont = 0
+        while(cont == 0){
+        var nota1 = Number(prompt("Insira a nota:"))
+        var nota2 = Number(prompt("Insira a outra nota:"))
+
+        media = (nota1 + nota2) / 2
+        if(media >= 9.5){
+            alert("Aprovado")
+        }else{
+            alert("Não aprovado")
+        }
+        loop = prompt("Calcular a média de outro aluno? S/N")
+        if(loop == "N"){
+            cont = 1
+        }
+        }
+
+        //---- exercício 7 ----
+        notas = []
+        for(var i = 0; i < 6; i++){
+            nota1 = Number(prompt("Insira a nota (0 a 10)"))
+            if(nota1 < 0 || nota1 > 10){
+                alert("Inválido")
+                i--
+            }
+            nota2 = Number(prompt("Insira outra nota (0 a 10)"))
+            if(nota2 < 0 || nota2 > 10){
+                alert("Inválido")
+                i--
+                
+            }
+            media = (nota1 + nota2) / 2
+            notas.push(media)
+
+        }
+        alert(notas)
+
+        //---- exercicio 8 ----
+        valores = []
+         var valor = Number(prompt("Insira um número:"))
+         for(var i = 1; i < valor+1; i++){
+            valores.push(i)
+         }
+         alert(valores)
+
+         //---- exercicio 9 ----
+        valores = []
+         for(var i = 101; i < 112; i++){
+            valores.push(i)
+         }
+         alert(valores)
+
+         //---- exercicio 10 ----
+         valores_entre = []
+         valores_fora = []
+         for(var i = 0; i < 10; i++){
+            valor = Number(prompt("Insira um valor: "))
+            if(valor >= 24 && valor <= 42){
+                valores_entre.push(valor)
+            }else{
+                valores_fora.push(valor)
+            }
+         }
+         alert("Entre 24 e 42: "+ valores_entre.length)
+         alert("Fora do intervalo: "+ valores_fora.length)
+
+         //---- exercício 11 ----
+         valor = Number(prompt("Insira um valor:"))
+         for(var i = 1; i <= valor; i++){
+            alert("Tabuada do "+ i)
+
+            for(var j = 1; j <= 10; j++){
+                alert(i * j)
+            }
+         }
+
+    </script>
+</body>
+</html>

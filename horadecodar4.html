@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 4</title>
+</head>
+<body>
+    <script>
+        //---- exercício 1 ----
+        alunos = []
+        while(true){
+            cadastro = prompt("Digite o nome do aluno, para sair digite PARE")
+            if(cadastro == "PARE"){
+                break
+            }
+            alunos.push(cadastro)
+        }
+            alert(alunos.length)
+            alert(alunos)
+
+        //---- exercicio 2 ----
+        var planetas = ["Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"]
+        input = prompt("Digite o nome de um planeta")
+        if(planetas.includes(input)){
+            alert("O planeta está na array")
+        }else{
+            alert("O planeta não está na array")
+        }
+
+        //---- exercício 3 ----
+        var frutasLista = ["maçã","banana","uva","laranja"]
+        while(frutasLista.length > 0){
+            alert("Lista de frutas: "+ frutasLista)
+
+            fruta = prompt("Digite o nome da fruta para remover:")
+            procura = frutasLista.indexOf(fruta)
+            if(procura !== -1){
+                frutasLista.splice(procura, 1)
+                alert("Fruta foi removida da lista")
+            }else{
+                alert("Fruta indisponível no nosso mercado")
+            }
+        }
+        alert("Lista de compras finalizada")
+    </script>
+</body>
+</html>

@@ -112,6 +112,46 @@
             alert("Tente novamente")
         }
 
+        //---- exercício 9 ----
+
+        ano = Number(prompt("Insira seu ano de nascimento: "))
+        idade = 2026 - ano
+        if(idade <= 70 && idade >= 18){
+            alert("Seu voto é obrigatório.")
+        }
+        else if(idade > 0 || idade > 125){
+            alert("Seu voto não é obrigatório.")
+        }else{
+            alert("Data inválida.")
+        }
+
+        //---- exercício 10 ----
+        altura = Number(prompt("Insira a altura: "))
+        genero = Number(prompt("Insira o gênero: 1 = Feminino / 2 = Masculino"))
+        if(genero == 1){
+            alert((62.1 * altura) - 44.7 + "kg é o peso ideal")
+        }else if(genero == 2){
+            alert((72.7 * altura) - 58 + "kg é o peso ideal")
+        }else{
+            alert("Dados inválidos.")
+        }
+
+        //---- exercício 11 ----
+        num1 = Number(prompt("Insira um número inteiro: "))
+        num2 = Number(prompt("Insira outro número inteiro: "))
+        op = Number(prompt("Escolha uma operação: 1-Adição, 2-Subtração, 3-Divisão, 4-Multiplicação"))
+        if(op == 1){
+            alert(num1 + num2)
+        }else if(op == 2){
+            alert(num1 - num2)
+        }else if(op == 3){
+            alert(num1 / num2)
+        }else if(op == 4){
+            alert(num1 * num2)
+        }else{
+            alert("Inválido.")
+        }
+
 
     </script>
 </body>
